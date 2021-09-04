@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNote"
+    android:layout_marginTop="80dp"
+    >
+
+   <EditText
+        android:hint="Title"
+       android:id="@+id/textTitle"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       />
+    <EditText
+        android:hint="Description"
+        android:layout_below="@+id/textTitle"
+        android:id="@+id/textDesc"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+       />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textDesc"
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="SAVE"
+        android:textColor="@color/purple_200"/>
+
+</RelativeLayout>
