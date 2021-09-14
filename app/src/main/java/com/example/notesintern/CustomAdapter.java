@@ -65,6 +65,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             public void onClick(View v) {
                 MyDatabaseHelper myDatabaseHelper=new MyDatabaseHelper(v.getContext());
                 myDatabaseHelper.deleteOneRow(String.valueOf(notesId.get(position)));
+                notesId.remove(position);
+                notesDescp.remove(position);
+                notesTitle.remove(position);
+                notifyDataSetChanged();
             }
         });
     }
